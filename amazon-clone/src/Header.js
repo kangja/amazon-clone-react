@@ -16,8 +16,33 @@ function Header() {
       {/* logo */}
       
       <div className="header__nav">
+        <div className="header__option">
+          <span 
+          className="header__optionLioneOne">Hello Guest</span>
+          <span
+          className="header__optionLineTwo">
+          Sign In</span>
+        </div>
 
-      </div>f
+        <div className="header__option">
+        <span 
+          className="header__optionLioneOne">
+          Returns</span>
+          <span
+          className="header__optionLineTwo">
+          & Orders</span>
+        </div>
+ 
+        <div className="header__option">
+        <span 
+          className="header__optionLioneOne">
+          Your</span>
+          <span
+          className="header__optionLineTwo">
+          Prime</span>
+        </div>
+
+      </div>
     </div>
   )
 }
