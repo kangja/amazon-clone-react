@@ -9,7 +9,15 @@ function Header() {
         src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
       />
 
-      <div className="header__search"></div>
+      <div className="header__search">
+        <input
+          className="header__searchInput"type="text" />
+      </div>
+      {/* logo */}
+      
+      <div className="header__nav">
+
+      </div>f
     </div>
   )
 }
