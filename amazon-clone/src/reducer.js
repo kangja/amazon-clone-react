@@ -12,7 +12,7 @@ const reducer = (state, action) => {
     case "ADD_TO_BASKET":
       return {
         ...state, //previous state of basket
-        basket: [...state.basket, action.item] //previous state of basket + whatever we've decided add
+        basket: [...state.basket, action.item], //previous state of basket + whatever we've decided add
       };
     
     case "REMOVE_FROM_BASKET":
@@ -22,11 +22,17 @@ const reducer = (state, action) => {
       let newBasket = [...state.basket];
 
       if (index >= 0) {
+        newBasket.splice(index, 1);
 
       } else {
         console.warn(
-          `Can't remove product (id: ${action.id}) as its not in basket!`
+          `Can't remove product (id: ${action.id}) as it's not in basket!`
         )
+      }
+
+      return {
+        ...state,
+        basket: newBasket
       }
       
     default:
